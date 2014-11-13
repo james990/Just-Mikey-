@@ -1,0 +1,189 @@
+<! DOCTYPE HTML>
+
+<html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="moving.css"/>
+<script src="myapp.js" type="text/javascript">
+</script>
+
+
+<title>My App</title>
+
+</head>
+
+
+
+
+<body>
+<script>
+function  box1_animate(px){
+$('#box1').animate({
+'marginLeft' : px
+});
+
+}
+</script>
+
+<script>
+function  box1_animate1(px){
+$('#box1').animate({
+'marginTop' : px
+});
+
+}
+</script>
+
+
+<script>
+function  box2_animate(px){
+$('#box2').animate({
+'marginLeft' : px
+});
+
+}
+</script>
+
+<script>
+function  box2_animate1(px){
+$('#box2').animate({
+'marginTop' : px
+});
+
+}
+</script>
+
+<script>
+function  box3_animate(px){
+$('#box2').animate({
+'marginLeft' : px
+});
+
+}
+</script>
+
+<script>
+function  box3_animate1(px){
+$('#box2').animate({
+'marginTop' : px
+});
+
+}
+</script>
+
+
+<script>
+
+$(function(){
+$('#box1').click(function(){
+$('#box1').fadeOut(800);
+$('#box4').fadeOut(800);
+$('#spacer').show();
+	});
+	});
+	
+	$(function(){
+$('#box2').click(function(){
+$('#box2').fadeOut(800);
+$('#box3').fadeOut(800);
+$('#spacer').show();
+	});
+	});
+	
+	$(function(){
+$('#box4').click(function(){
+$('#box1').fadeOut(800);
+$('#box4').fadeOut(800);
+$('#spacer').show();
+	});
+	});
+	
+	$(function(){
+$('#box3').click(function(){
+$('#box2').fadeOut(800);
+$('#box3').fadeOut(800);
+$('#spacer').show();
+	});
+	});
+	
+		$(function(){
+$('#spacer').click(function(){
+$('#box1').fadeIn(800);
+$('#box2').fadeIn(800);
+$('#box3').fadeIn(800);
+$('#box4').fadeIn(800);
+$('#spacer').show();
+	});
+	});
+
+
+</script>
+
+<div id="inputbox1">
+ <input type="button" value="move left" onclick="box1_animate('-=100px')"/>
+ <input type="button" value="move right" onclick="box1_animate('+=100px')"/>
+ <input type="button" value="move up" onclick="box1_animate1('-=100px')"/>
+ <input type="button" value="move down" onclick="box1_animate1('+=100px')"/>
+</div>
+
+<div id="inputbox2">
+ <input type="button" value="move left" onclick="box2_animate('-=100px')"/>
+ <input type="button" value="move right" onclick="box2_animate('+=100px')"/>
+ <input type="button" value="move up" onclick="box2_animate1('-=100px')"/>
+ <input type="button" value="move down" onclick="box2_animate('+=100px')"/>
+</div>
+
+<div id="inputbox3">
+ <input type="button" value="move left" onclick="box3_animate('-=100px')"/>
+ <input type="button" value="move right" onclick="box3_animate('+=100px')"/>
+ <input type="button" value="move up" onclick="box1_animate3('-=100px')"/>
+ <input type="button" value="move down" onclick="box1_animate3('+=100px')"/>
+</div>
+
+<div id="inputbox4">
+ <input type="button" value="move left" onclick="box4_animate('-=100px')"/>
+ <input type="button" value="move right" onclick="box4_animate('+=100px')"/>
+ <input type="button" value="move up" onclick="box4_animate1('-=100px')"/>
+ <input type="button" value="move down" onclick="box4_animate('+=100px')"/>
+</div>
+
+<div id="wrapper">
+
+<div id="top">
+<div id="box1">
+</div>
+
+<div id="box2">
+
+</div>
+
+</div>
+
+
+<div id="spacer">
+</div>
+
+<div ="bottom">
+<div id="box3">
+
+</div>
+
+<div id="box4">
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</body>
+
+
+
+
+
+
+</html>
